@@ -27,3 +27,15 @@ Children:
   Id: g=2c8f7f7f1ea1da564ec50da5dfe19065
   Type: BaseDataVariableType
   DataType: Boolean
+- Name: MioMotore
+  Type: BaseObjectType
+  Children:
+  - Name: boolvar
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Variable2
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Variable3
+    Type: BaseDataVariableType
+    DataType: Int32

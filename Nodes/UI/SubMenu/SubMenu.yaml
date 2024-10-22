@@ -1,0 +1,32 @@
+Name: SubMenu
+Type: FolderType
+Children:
+- Name: mioScreen11
+  Id: g=80564d96b5d8cb4913863172656269fe
+  Supertype: mioScreen
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: BorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#ffff00"
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#ffff00"
+- Name: mioScreen12
+  Id: g=ea3d22d849461d76dde2a09855e12d71
+  Supertype: mioScreen
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#008000"

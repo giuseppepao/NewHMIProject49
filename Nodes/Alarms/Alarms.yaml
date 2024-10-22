@@ -1,3 +1,182 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm1
+  Id: g=af2fb1803ecf3c6650999c7b8e97a2bb
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=03de21307f1f2bc2c67b7043c6308f83
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=53face10bcaa94c14b650d84f5e1e5c7
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=f9f5b4d4cafd5d565733dc5f2e329557
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/VarAllarmi/AlarmVariable1"
+      Children:
+      - Name: Mode
+        Id: g=82e5bf434ba4f18870eab248025aac9f
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=bdda845a1e8fed8f55fdff1764737a17
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Name: Message
+    Id: g=d8d080551a366a3783c536143952782b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"allarme1"}
+- Name: DigitalWarning1
+  Id: g=95f11423d5dfcdbfddbb9e675f3e637b
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=50fcd92ba71b991a47343d9475f2aab8
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=407dca8ffeecbd2a7699ef009ee18b36
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=e25c92efa930daef486e36eec70b1dc9
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/VarAllarmi/AlarmVariable2"
+      Children:
+      - Name: Mode
+        Id: g=49366b056bbb4178c7642221516281a4
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=7f3b3383108c23714efd3ea2d4934022
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Name: AutoAcknowledge
+    Id: g=2dc508ddb6fe673c9e3362f4645f1110
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Message
+    Id: g=374d4ee46c43fdde82e93869597305fd
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"sopra livello"}
+  - Name: AutoConfirm
+    Id: g=827d0dd471515cfa509219645b978f3f
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: DigitalMessage1
+  Id: g=5b00ac2211938212b10a1c8f7946c69d
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=17e4360d745fb596a156c388124c24d8
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=12ef50368ad60c425af2b2661cc7dcd1
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=4d1fd506d5e609c766ca2a181239332b
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/VarAllarmi/AlarmVariable3"
+      Children:
+      - Name: Mode
+        Id: g=4c724c8ac77c39e3d16fc0481cc8b602
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=5fb03f02a9ae16ce80f9f6f324c18297
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Name: AutoAcknowledge
+    Id: g=1d8e2859463aa0f9074af8326a78ded3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=0087e0776d00dbea65e63af9cd1f6c6c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Message
+    Id: g=f814225c6ee8a5c68e2645ad45351c46
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"porta aperta"}

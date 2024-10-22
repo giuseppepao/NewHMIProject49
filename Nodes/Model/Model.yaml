@@ -28,14 +28,70 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
 - Name: MioMotore
-  Type: BaseObjectType
+  Id: g=6a9df7104fe8caa8fa9d53b291742f4f
+  Supertype: BaseObjectType
   Children:
-  - Name: boolvar
+  - Name: enable
     Type: BaseDataVariableType
     DataType: Boolean
-  - Name: Variable2
+  - Name: speed
     Type: BaseDataVariableType
     DataType: Int32
-  - Name: Variable3
+  - Name: acceleration
     Type: BaseDataVariableType
     DataType: Int32
+    Value: 45
+  - Name: alarm
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: MioMotore1
+  Id: g=ba24d7c28cb99a063b6e544c25e3de41
+  Type: MioMotore
+  Children:
+  - Name: enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: speed
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: acceleration
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 45
+  - Name: alarm
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: MioMotore2
+  Id: g=c3d04be9bae698749fb05ec8cfd64df6
+  Type: MioMotore
+  Children:
+  - Name: enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: speed
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: acceleration
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 45
+  - Name: alarm
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: MioMotore3
+  Type: MioMotore
+  Children:
+  - Name: enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: speed
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: acceleration
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 45
+  - Name: alarm
+    Type: BaseDataVariableType
+    DataType: Boolean
+- File: VarAllarmi/VarAllarmi.yaml
